@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    text-indent: 2em;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  

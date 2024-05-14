@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex; /* Use flexbox for horizontal layout on desktops */
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav {
+    display: flex; /* Align navigation links horizontally */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  .content,
+  .sidebar {
+    padding: 20px;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  }
+  
+  .content {
+    flex: 2 1 60%; /*  Set content to take up 2 parts of flex space, with a minimum width of 60% */
+  }
+  
+  .sidebar {
+    flex: 1 0 30%; /*  Set sidebar to take up 1 part of flex space, with a maximum width of 30% */
+    margin-top: 20px; /* Add margin on top for desktop layout */
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Media Queries for Responsive Adjustments */
+  
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: flex-start; /* Align items at the start */
+    }
+  
+    nav {
+      flex-direction: column; /* Stack navigation links vertically */
+      margin-top: 20px; /* Add margin on top for mobile layout */
+    }
+  
+    .content,
+    .sidebar {
+      width: 100%; /* Make elements full width on smaller screens */
+      margin-top: 0; /* Remove margin on top for stacked layout */
+    }
+  
+    .sidebar {
+      margin-top: 20px; /* Add margin between content and sidebar on mobile */
+    }
+  }
+  
